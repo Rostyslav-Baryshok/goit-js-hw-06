@@ -1,4 +1,4 @@
-const refs = {
+const counter = {
   decrementBtn: document.querySelector('[data-action="decrement"]'),
   incrementBtb: document.querySelector('[data-action="increment"]'),
   valueEl: document.querySelector('#value'),
@@ -6,8 +6,8 @@ const refs = {
 
 let counterValue = 0;
 
-refs.decrementBtn.addEventListener('click', decrement);
-refs.incrementBtb.addEventListener('click', increment);
+counter.decrementBtn.addEventListener('click', decrement);
+counter.incrementBtb.addEventListener('click', increment);
 
 function decrement() {
   counterValue -= 1;
@@ -20,5 +20,5 @@ function increment() {
 }
 
 function changeValueEl(value) {
-  refs.valueEl.textContent = value;
+  counter.valueEl.textContent = value;
 }
